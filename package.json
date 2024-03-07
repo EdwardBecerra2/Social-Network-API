@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/EdwardBecerra2/Social-Network-API"
+        "url": "git+https://github.com/EdwardBecerra2/Social-Network-API"
     },
     "keywords": [],
     "author": "",
@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/EdwardBecerra2/Social-Network-API",
     "dependencies": {
-        "express": "4.18.3",
-        "mongoose": "^6.9.1"
+        "express": "^4.18.3",
+        "mongoose": "^6.12.7"
     }
 }

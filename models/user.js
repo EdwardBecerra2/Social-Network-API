@@ -30,6 +30,7 @@ friend: [
 {
     toJSON: {
         virtuals: true,
+        getters: true
     },
     id: false,
 }
