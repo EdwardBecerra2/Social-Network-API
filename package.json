@@ -1,0 +1,25 @@
+{
+    "name": "Social-Network-API",
+    "version": "1.0.0",
+    "description": "Documentation for the Social Network API",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EdwardBecerra2/Social-Network-API"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/EdwardBecerra2/Social-Network-API"
+    },
+    "homepage": "https://github.com/EdwardBecerra2/Social-Network-API",
+    "dependencies": {
+        "express": "4.18.3",
+        "mongoose": "^6.9.1"
+    }
+}
