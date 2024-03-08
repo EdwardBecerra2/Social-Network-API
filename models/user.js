@@ -1,4 +1,4 @@
-const { Schema, model, SchemaType } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const UserSchema = new Schema({
 
@@ -16,13 +16,13 @@ const UserSchema = new Schema({
         match: [/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/]  //regex for email validation
     },
     thought: [ {
-        type: SchemaType.objectID,
+        type: Schema.Types.ObjectId,
         ref: 'Thought'
     }
 ],
 friend: [ 
     { 
-        type: SchemaType.objectID,
+        type: Schema.Types.ObjectId,
         ref: 'User'
     },
 ],
