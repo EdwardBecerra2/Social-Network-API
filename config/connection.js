@@ -7,6 +7,4 @@ mongoose.connect( 'mongodb://localhost:27017/socialnetworkdb',
 }
 );
 
-module.set('debug', true);
-
 module.exports = mongoose.connection;
