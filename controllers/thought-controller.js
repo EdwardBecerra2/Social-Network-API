@@ -72,17 +72,21 @@ const thoughtController = {
         .then((thought) => {
             if(!thought){
                 res.status(404).json({message: 'No thought with that ID'}) 
-    
-    
-            }      
+            }    
+
             
             return User.findOneAndUpdate(
-                {_id:req.body.userID},
+                {thoughts: params.id},
                 {$pull:{thoughts:thought._id}},
                 {new:true}
-     
-            )
-       }).then(() => res.json({message: 'User and associated apps deleted!'})).catch((err) => res.status(500).json(err));
+            );
+       }).then((socialnetworkdb) => {
+            if(!socialnetworkdb){
+               return res.status(404).json({message: 'No user with that ID'})
+            }
+            res.json({message: "Thought Deleted!!"});
+        })
+        .catch((error) => res.json(error));
     },
    
 
